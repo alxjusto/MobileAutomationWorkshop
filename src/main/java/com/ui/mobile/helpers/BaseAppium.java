@@ -1,4 +1,4 @@
-package com.ui.mobile.run;
+package com.ui.mobile.helpers;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
