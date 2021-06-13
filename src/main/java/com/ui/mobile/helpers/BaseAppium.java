@@ -24,8 +24,6 @@ public class BaseAppium {
 
         driver = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"), appiumConecction);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-        Thread.sleep(5000);
     }
 
     public void cerrarAppium() {

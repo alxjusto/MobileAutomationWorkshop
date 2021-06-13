@@ -4,6 +4,7 @@ import com.ui.mobile.helpers.BaseAppium;
 import com.ui.mobile.helpers.Login;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
@@ -18,12 +19,13 @@ public class Tests {
     }
 
     @Test
+  @DisplayName("Test that performs the login")
     public void LoginTest() throws Exception {
-        login.completarCredencialesDeUsuario();
+        login.ingresarCredencialesDeUsuario();
     }
 
     @AfterAll
-    public static void cerrarTodo() {
+    public static void cerrarConexiones() {
         baseAppium.cerrarAppium();
     }
 
