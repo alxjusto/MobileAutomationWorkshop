@@ -21,12 +21,12 @@ public class JsonDataProvider {
 
     private List<CapabilitiesDTO> getCapabilities() throws FileNotFoundException {
         Gson gson = new Gson();
-        BufferedReader bufferedReader = null;
+        BufferedReader bufferedReader;
 
         bufferedReader = new BufferedReader(new FileReader(capabilityFilePath));
-        CapabilitiesDTO[] capabilitiesDTOS = gson.fromJson(bufferedReader, CapabilitiesDTO[].class);
+        CapabilitiesDTO[] capabilities = gson.fromJson(bufferedReader, CapabilitiesDTO[].class);
 
-        return Arrays.asList(capabilitiesDTOS);
+        return Arrays.asList(capabilities);
     }
 
     public CapabilitiesDTO getCapability(String capabilityName) {

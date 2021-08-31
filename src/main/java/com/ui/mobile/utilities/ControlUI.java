@@ -9,17 +9,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ControlUI extends BaseAppium {
 
-    public void esperarElemento(By elemento){
+    public void waitForElement(By element) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
-    public void moverseDesdeElementoUnoHaciaElmentoDos(By elementoUno, By elementoDos) {
+    public void moveFromOneElementToAnother(By firstElement, By secondElement) {
         int x1, y1, x2, y2;
-        x1 = driver.findElement(elementoUno).getLocation().getX();
-        y1 = driver.findElement(elementoUno).getLocation().getY();
-        x2 = driver.findElement(elementoDos).getLocation().getX();
-        y2 = driver.findElement(elementoDos).getLocation().getY();
+        x1 = driver.findElement(firstElement).getLocation().getX();
+        y1 = driver.findElement(firstElement).getLocation().getY();
+        x2 = driver.findElement(secondElement).getLocation().getX();
+        y2 = driver.findElement(secondElement).getLocation().getY();
         swipe(x1, y1, x2, y2);
     }
 

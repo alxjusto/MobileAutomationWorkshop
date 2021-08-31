@@ -13,12 +13,11 @@ public class SamplesListPage extends BaseAppium {
 
     ControlUI controlUI = new ControlUI();
 
-    public void elegirOpcionCarrouselDesdeSampleList() {
-        controlUI.esperarElemento(backButton);
-        controlUI.moverseDesdeElementoUnoHaciaElmentoDos(longPressOption, dragAndDropOption);
-        controlUI.esperarElemento(carrouselOption);
+    public void chooseCarrouselOptionFromSampleList() {
+        controlUI.waitForElement(backButton);
+        controlUI.moveFromOneElementToAnother(longPressOption, dragAndDropOption);
+        controlUI.waitForElement(carrouselOption);
         driver.findElement(carrouselOption).click();
     }
-
 
 }

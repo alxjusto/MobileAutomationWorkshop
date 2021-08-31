@@ -17,20 +17,19 @@ public class Tests {
 
     @BeforeAll
     public static void setUp() throws Exception {
-        baseAppium.iniciarAppium();
+        baseAppium.startAppium();
     }
 
     @Test
     @DisplayName("Test that performs the login")
-    public void LoginTest() throws Exception {
-        loginPage.ingresarCredencialesDeUsuario();
-        samplesListPage.elegirOpcionCarrouselDesdeSampleList();
+    public void LoginTest() {
+        loginPage.sendUserCredentials();
+        samplesListPage.chooseCarrouselOptionFromSampleList();
     }
 
     @AfterAll
-    public static void cerrarConexiones() {
-        baseAppium.cerrarAppium();
+    public static void closeConnection() {
+        baseAppium.closeAppium();
     }
-
 
 }
