@@ -1,0 +1,23 @@
+[
+  {
+    "PlatformName": "Android",
+    "platformVersion": "8",
+    "deviceName": "ce08171872edcc24047e",
+    "appPackage": "com.vodqareactnative",
+    "appActivity": "com.vodqareactnative.MainActivity"
+  },
+  {
+    "PlatformName": "Android",
+    "platformVersion": "11",
+    "deviceName": "emulator-5554",
+    "appPackage": "com.vodqareactnative",
+    "appActivity": "com.vodqareactnative.MainActivity"
+  },
+  {
+    "PlatformName": "Android",
+    "platformVersion": "10",
+    "deviceName": "36524734474e3098",
+    "appPackage": "com.vodqareactnative",
+    "appActivity": "com.vodqareactnative.MainActivity"
+  }
+]
