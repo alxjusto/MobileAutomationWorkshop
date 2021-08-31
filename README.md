@@ -1,5 +1,5 @@
 # MobileAutomationWorkshop
-This is a base test automation framework for automate mobile apps (android)
+This is a base test automation framework for automate mobile apps (android). 
 We set a JsonDataProvider class for mapping the capabilities as an example for DDT.
 
 ####Tools
